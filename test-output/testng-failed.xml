@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" parallel="none">
+  <listeners>
+    <listener class-name="Academy.Listeners"/>
+  </listeners>
+  <test name=" Validation Text Link(failed)" parallel="none">
+    <classes>
+      <class name="Academy.ValidateNavigationBar">
+        <methods>
+          <include name="Close"/>
+          <include name="Initalize"/>
+        </methods>
+      </class> <!-- Academy.ValidateNavigationBar -->
+      <class name="Academy.HomePage">
+        <methods>
+          <include name="initalize"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- Academy.HomePage -->
+      <class name="Academy.ValidateTextLink">
+        <methods>
+          <include name="ValidateTextLink"/>
+          <include name="Close"/>
+          <include name="initalize"/>
+        </methods>
+      </class> <!-- Academy.ValidateTextLink -->
+    </classes>
+  </test> <!--  Validation Text Link(failed) -->
+</suite> <!-- Failed suite [Suite] -->
